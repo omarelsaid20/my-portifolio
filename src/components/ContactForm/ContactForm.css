@@ -8,6 +8,9 @@
 .contact-form .shape {
   width: 50%;
 }
+.contact-form .shape img {
+  padding: 50px;
+}
 
 .contact-form .form-sec {
   width: 50%;
@@ -32,7 +35,7 @@
 .contact-form form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Add this line to center the inputs */
+  align-items: center;
 }
 
 .contact-form button {
