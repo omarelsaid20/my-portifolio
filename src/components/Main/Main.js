@@ -31,7 +31,7 @@ function Main() {
           <a href="https://github.com/omarelsaid20">
             <i className="fab fa-github"></i>
           </a>
-          <a href="#">
+          <a href="https://twitter.com/OmarElsaiyd">
             <i className="fab fa-twitter"></i>
           </a>
         </div>
