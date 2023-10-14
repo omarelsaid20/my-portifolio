@@ -1,7 +1,24 @@
 .contact-form {
-  background-color: #f6f6f6;
-  padding: 20px;
+  background-color: #ffffff;
   padding-bottom: 50px;
+  display: flex;
+  padding: 0 200px 50px 200px;
+}
+
+.contact-form .shape {
+  width: 50%;
+}
+
+.contact-form .form-sec {
+  width: 50%;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.contact-form img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-form h2 {
@@ -16,22 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Add this line to center the inputs */
-}
-
-.contact .icon {
-  font-size: 4.5em;
-}
-
-.contact .info h3 {
-  color: #000;
-}
-.contact p {
-  text-align: center;
-  font-size: 1.3em;
-}
-
-.contact .content {
-  margin-top: 30px;
 }
 
 .contact-form button {

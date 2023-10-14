@@ -1,0 +1,22 @@
+.contact .icon {
+  font-size: 3em;
+  padding: 20px;
+  background-color: #025570;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+
+.contact .info h3 {
+  color: #000;
+}
+.contact p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.contact .content {
+  margin-top: 30px;
+}
