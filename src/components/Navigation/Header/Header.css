@@ -1,0 +1,28 @@
+header {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo span {
+  margin: auto;
+}
+
+.logo {
+  text-decoration: none;
+  color: #034f68;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.8em;
+  transition: 0.7s ease;
+  transition: 2s ease;
+}
+
+.logo:hover {
+  color: #02445a;
+}

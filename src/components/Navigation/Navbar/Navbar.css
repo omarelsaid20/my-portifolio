@@ -1,0 +1,34 @@
+.navigation {
+  display: block;
+}
+
+.navigation .nav-link {
+  text-decoration: none;
+  color: #035d7b;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 30px;
+  padding-bottom: 2px;
+  transition: 0.4s ease;
+}
+.navigation .nav-link:hover {
+  border-bottom: 2.5px solid #02445a;
+  color: #02445a;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #035d7b;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  /* letter-spacing: 1px; */
+  padding: 0.5em 1.5em;
+  transition: 0.7s ease;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 10px;
+}
+.nav-btn:hover {
+  background-color: #02445a;
+}
