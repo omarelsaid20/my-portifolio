@@ -33,12 +33,22 @@
   .sidebar a {
     font-size: 1.2rem;
   }
+
+  .about-me {
+    flex-direction: column;
+    display: block;
+  }
+
   .about-me-img {
-    display: none;
+    display: block;
+    margin: auto;
   }
   .about-me-info {
     width: 100%;
     padding: 0;
+  }
+  .about-me-info h1 {
+    padding: 20px;
   }
   .personal-info {
     padding: 0;
@@ -75,6 +85,12 @@
   .contact-form input,
   .contact-form textarea {
     width: auto;
+  }
+
+  @media (max-width: 450px) {
+  }
+  .about-me-img {
+    width: 100%;
   }
 }
 

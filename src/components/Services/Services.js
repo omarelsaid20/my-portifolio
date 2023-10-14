@@ -15,20 +15,18 @@ function Services() {
           <i class="fas fa-code"></i>
         </Card>
         <Card
-          title="Frontend Development"
-          decription={
-            "I build websites using HTML, CSS, Javascript, React.js and material ui"
-          }
-        >
-          <i class="fas fa-code"></i>
-        </Card>
-        <Card
           title="Backend Development"
           decription={
             "Building website's backend with Node.js, express, mongodb"
           }
         >
           <i class="fas fa-server"></i>
+        </Card>
+        <Card
+          title="Fullstack Development"
+          decription={"Developing both client and server side "}
+        >
+          <i class="fas fa-laptop-code"></i>
         </Card>
       </div>
     </section>

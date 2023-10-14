@@ -9,8 +9,12 @@ function AboutMe() {
       <div class="about-me-info">
         <h1>About Me</h1>
         <p class="overview">
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia
+          Highly skilled and versatile full-stack developer with one years of
+          experience in designing and implementing innovative web applications.
+          Proficient in both front-end and back-end development, adept at
+          leveraging modern technologies to deliver robust and user-friendly
+          solutions. Strong problem-solving abilities and a passion for creating
+          efficient, scalable, and high-performance software systems
         </p>
         <div class="personal-info">
           <div class="titels">
@@ -38,6 +42,7 @@ function AboutMe() {
             <p>01012052557</p>
           </div>
         </div>
+        <hr />
         <div class="education">
           <h3>
             Education <i class="fas fa-graduation-cap"></i>:
