@@ -48,7 +48,7 @@
     padding: 0;
   }
   .about-me-info h1 {
-    padding: 20px;
+    padding-top: 20px;
   }
   .personal-info {
     padding: 0;
@@ -74,6 +74,7 @@
   }
   .main {
     background: url("../public/images/header3.jpg") no-repeat;
+    min-height: 86vh;
   }
   .main h2 {
     font-size: 0.9em;
@@ -82,10 +83,10 @@
   .main h3 {
     font-size: 1.5em;
   }
-  .contact-form input,
+  /* .contact-form input,
   .contact-form textarea {
-    width: auto;
-  }
+    width: 100%;
+  } */
 
   @media (max-width: 450px) {
   }

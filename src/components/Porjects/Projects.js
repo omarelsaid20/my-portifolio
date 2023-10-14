@@ -16,6 +16,11 @@ function Projects() {
           title={"MY PLACES APP"}
           decription={"Html, css, React.js, Node.js , mongoose and restful api"}
         />
+        <ProjectCard
+          imageUrl={"./images/p3.jpg"}
+          title={"My shop | E-commerce"}
+          decription={"Html, css, Node.js, ejs , mongoose "}
+        />
       </div>
     </section>
   );
