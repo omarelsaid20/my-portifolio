@@ -9,12 +9,11 @@ function AboutMe() {
       <div class="about-me-info">
         <h1>About Me</h1>
         <p class="overview">
-          Highly skilled and versatile full-stack developer with one years of
-          experience in designing and implementing innovative web applications.
-          Proficient in both front-end and back-end development, adept at
-          leveraging modern technologies to deliver robust and user-friendly
-          solutions. Strong problem-solving abilities and a passion for creating
-          efficient, scalable, and high-performance software systems
+          Full-Stack Developer with 1 years of experience designing and
+          implementing innovative web applications. Proficient in front-end
+          (HTML5, CSS3, JavaScript, React.js) and back-end (Node.js, Express.js,
+          databases) development. Skilled in deploying applications using AWS,
+          Docker, and Jenkins.
         </p>
         <div class="personal-info">
           <div class="titels">
