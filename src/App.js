@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import AboutMe from "./components/About-me/About-me";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -10,15 +11,17 @@ import Services from "./components/Services/Services";
 import "./responsive.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="App">
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main />
-      <AboutMe />
-      <Services />
-      <Projects />
-      <ContactInfo />
-      <ContactForm />
+      <AboutMe darkMode={darkMode} />
+      <Services darkMode={darkMode} />
+      <Projects darkMode={darkMode} />
+      <ContactInfo darkMode={darkMode} />
+      <ContactForm darkMode={darkMode} />
       <Footer />
     </div>
   );

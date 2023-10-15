@@ -4,7 +4,7 @@
 
 .navigation .nav-link {
   text-decoration: none;
-  color: #035d7b;
+  color: #156d8a;
   font-size: 1.1em;
   font-weight: 500;
   margin-left: 30px;
@@ -31,4 +31,19 @@
 }
 .nav-btn:hover {
   background-color: #02445a;
+}
+
+.dark-mode-btn-nav {
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+  font-size: 1.4rem;
+}
+
+.header-dark .dark-mode-btn-nav {
+  color: #fff;
 }

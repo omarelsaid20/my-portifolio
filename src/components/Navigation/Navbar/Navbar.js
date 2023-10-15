@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ darkMode, setDarkMode }) {
   return (
     <>
       <nav className="navigation">
@@ -23,6 +23,12 @@ function Navbar() {
         >
           Github <i className="fab fa-github"></i>
         </a>
+        <button
+          className="dark-mode-btn-nav"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+        </button>
       </nav>
     </>
   );

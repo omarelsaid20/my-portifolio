@@ -20,3 +20,13 @@
 .contact .content {
   margin-top: 30px;
 }
+
+/* Dark mode */
+
+.card-dark .info h3 {
+  color: rgb(255, 255, 255);
+}
+
+/* .contact .card-dark .icon {
+  color: #000000;
+} */

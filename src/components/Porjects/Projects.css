@@ -1,5 +1,5 @@
 .projects {
-  background-color: #000016;
+  background-color: #001016;
 }
 
 .projects .content {
@@ -12,7 +12,7 @@
   border-radius: 10px;
   margin: 20px;
   min-height: 14em;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   overflow: hidden;
   transition: 0.7s ease;
 }
@@ -84,4 +84,19 @@
 
 .porject-btn:hover {
   background-color: #02445a;
+}
+
+/* Dark mode */
+.project-card-dark {
+  background-color: #000000 !important;
+  color: #fff;
+  border: none;
+}
+.project-card-dark p {
+  color: #cecece;
+}
+
+.project-card-dark .more-details {
+  background-color: #cbcbcb;
+  color: #161616;
 }

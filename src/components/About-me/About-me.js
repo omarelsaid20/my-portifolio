@@ -1,8 +1,8 @@
 import "./About-me.css";
 
-function AboutMe() {
+function AboutMe({ darkMode }) {
   return (
-    <section class="about-me" id="about-me">
+    <section class={`${darkMode ? "dark" : null} about-me `} id="about-me">
       <div class="about-me-img">
         <img src="./images/omar-logo.jpg" alt="some dummy" />
       </div>

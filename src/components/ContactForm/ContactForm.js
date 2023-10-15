@@ -1,9 +1,9 @@
 import Input from "../UI/Input";
 import "./ContactForm.css";
 
-function ContactForm() {
+function ContactForm({ darkMode }) {
   return (
-    <section class="contact-form">
+    <section class={`${darkMode ? "contact-form-dark" : null} contact-form `}>
       <div className="shape">
         <img src="./images/Contact-us.png" alt="dummy" />
       </div>
@@ -25,6 +25,14 @@ function ContactForm() {
             type={"email"}
             id={"email"}
             name={"email"}
+          />
+          <Input
+            element="input"
+            forLabel="subject"
+            label={"Subject :"}
+            type={"text"}
+            id={"subject"}
+            name={"subject"}
           />
           <Input
             element="textarea"

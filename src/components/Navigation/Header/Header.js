@@ -1,15 +1,15 @@
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidbar/Sidebar";
 import "./Header.css";
-function Header() {
+function Header({ darkMode, setDarkMode }) {
   return (
-    <header>
+    <header className={`${darkMode ? "header-dark" : null}`}>
       <a href="/" className="logo">
         <i className="fas fa-code"></i>
         <span>Omar Elsaid</span>
       </a>
-      <Navbar />
-      <Sidebar />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Sidebar darkMode={darkMode} setDarkMode={setDarkMode} />
     </header>
   );
 }

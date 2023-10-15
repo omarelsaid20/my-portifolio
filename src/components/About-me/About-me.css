@@ -1,5 +1,4 @@
 .about-me {
-  margin-bottom: 20px;
   display: flex;
   background-color: #eeeeee;
 }
@@ -44,7 +43,6 @@
 }
 .titels p {
   color: #02445a;
-  /* font-size: 1.2rem; */
   font-weight: 600;
 }
 
@@ -75,4 +73,16 @@
 .about-me-info .social-icons a {
   font-size: 1.7em;
   color: #156d8a;
+}
+
+/* Dark mode */
+
+.dark .education h3 {
+  color: #ffffff;
+}
+
+.dark .titels p {
+  color: #ffffff;
+  /* font-size: 1.2rem; */
+  font-weight: 600;
 }

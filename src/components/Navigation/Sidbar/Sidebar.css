@@ -27,6 +27,7 @@
 
 .sidebar a:hover {
   color: #02445a;
+  background-color: #e4e4e4;
 }
 
 .sidebar .closebtn {
@@ -35,8 +36,9 @@
   position: absolute;
   top: 5px;
   left: 25px;
-  font-size: 36px;
+  font-size: 2rem;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .openbtn {
@@ -62,6 +64,39 @@
 #main {
   margin-left: 250px;
   transition: margin-right 0.5s;
+}
+
+.dark-mode-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+  margin: 16px 0 0 28px;
+}
+
+.dark,
+.dark .closebtn {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.dark a {
+  color: #fff;
+}
+
+.dark .dark-mode-btn {
+  background-color: #fff;
+  color: #1b1b1b;
+}
+
+.dark-mode:hover {
+  background-color: #393939;
+}
+
+.dark-mode:active {
+  outline: none;
 }
 
 @media screen and (max-height: 450px) {

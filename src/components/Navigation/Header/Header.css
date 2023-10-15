@@ -9,6 +9,14 @@ header {
   padding: 10px 200px;
 }
 
+.header-dark {
+  background-color: #292929;
+}
+
+.header-dark .logo {
+  color: #047296;
+}
+
 .logo span {
   margin: auto;
 }
@@ -20,7 +28,6 @@ header {
   font-weight: 700;
   font-size: 1.8em;
   transition: 0.7s ease;
-  transition: 2s ease;
 }
 
 .logo:hover {

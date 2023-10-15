@@ -2,7 +2,7 @@
   background-color: #ffffff;
   padding-bottom: 50px;
   display: flex;
-  padding: 0 200px 50px 200px;
+  padding: 0 200px 0 200px;
 }
 
 .contact-form .shape {
@@ -54,4 +54,27 @@
 .contact-form button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+/* contact from dark */
+
+.contact-form-dark {
+  background-color: #001016;
+}
+
+.contact-form-dark .form-sec {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form-dark .form-sec input,
+.contact-form-dark .form-sec textarea {
+  background-color: rgb(36, 36, 36);
+  border: none;
+  caret-color: #dbdbdb;
+  color: #fff;
+}
+.contact-form-dark .form-sec input:focus,
+.contact-form-dark .form-sec textarea:focus {
+  outline-style: none;
 }

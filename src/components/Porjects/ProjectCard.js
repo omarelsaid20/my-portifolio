@@ -1,6 +1,6 @@
-function ProjectCard({ imageUrl, title, decription }) {
+function ProjectCard({ imageUrl, title, decription, darkMode }) {
   return (
-    <div class="project-card">
+    <div class={`${darkMode ? "project-card-dark" : null} project-card `}>
       <div class="project-image">
         <img src={imageUrl} alt="project1" />
       </div>
