@@ -9,12 +9,14 @@ import Header from "./components/Navigation/Header/Header";
 import Projects from "./components/Porjects/Projects";
 import Services from "./components/Services/Services";
 import "./responsive.css";
+import Backdrop from "./components/UI/BackDrop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className="App">
+      {/* <Backdrop /> */}
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Main />
       <AboutMe darkMode={darkMode} />

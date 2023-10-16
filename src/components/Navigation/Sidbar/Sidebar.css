@@ -77,6 +77,10 @@
   margin: 16px 0 0 28px;
 }
 
+.btn-group .dark-mode-btn-nav {
+  padding-right: 15px;
+}
+
 .dark,
 .dark .closebtn {
   background-color: #1b1b1b;

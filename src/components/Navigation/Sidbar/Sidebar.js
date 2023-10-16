@@ -24,6 +24,7 @@ function Sidebar({ darkMode, setDarkMode }) {
           {darkMode ? " light mode" : " Dark mode"}
         </button>
       </div>
+
       <button className="openbtn" onClick={() => setOpenSidebar(true)}>
         ☰
       </button>
