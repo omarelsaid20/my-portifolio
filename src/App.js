@@ -8,16 +8,34 @@ import Main from "./components/Main/Main";
 import Header from "./components/Navigation/Header/Header";
 import Projects from "./components/Porjects/Projects";
 import Services from "./components/Services/Services";
+import Navbar from "./components/Navigation/Navbar/Navbar";
+import Sidebar from "./components/Navigation/Sidbar/Sidebar";
 import "./responsive.css";
 import Backdrop from "./components/UI/BackDrop";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [openBackDrop, setOpenBackDrop] = useState(false);
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
     <div className="App">
-      {/* <Backdrop /> */}
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Backdrop
+        openBackDrop={openBackDrop}
+        setOpenBackDrop={setOpenBackDrop}
+        setOpenSidebar={setOpenSidebar}
+      />
+
+      <Header darkMode={darkMode}>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Sidebar
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          setOpenBackDrop={setOpenBackDrop}
+          openSidebar={openSidebar}
+          setOpenSidebar={setOpenSidebar}
+        />
+      </Header>
       <Main />
       <AboutMe darkMode={darkMode} />
       <Services darkMode={darkMode} />

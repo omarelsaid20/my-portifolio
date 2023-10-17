@@ -1,13 +1,16 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
 import "./BackDrop.css";
 
 const Backdrop = (props) => {
-  const [closeBackdrop, setCloseBackdrop] = useState(true);
-
-  return closeBackdrop ? (
-    <div className="backdrop" onClick={() => setCloseBackdrop(false)}></div>
+  return props.openBackDrop ? (
+    <div
+      className="backdrop"
+      onClick={() => {
+        props.setOpenSidebar(false);
+        props.setOpenBackDrop(false);
+      }}
+    ></div>
   ) : null;
 };
 

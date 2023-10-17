@@ -3,9 +3,9 @@ import "./Projects.css";
 
 function Projects({ darkMode }) {
   return (
-    <section class=" projects" id="projects">
-      <h2 class="title">Projects</h2>
-      <div class="content">
+    <section className=" projects" id="projects">
+      <h2 className="title">Projects</h2>
+      <div className="content">
         <ProjectCard
           darkMode={darkMode}
           imageUrl={"./images/p1.jpg"}

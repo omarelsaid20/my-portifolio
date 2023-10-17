@@ -4,11 +4,11 @@ import "./Services.css";
 function Services({ darkMode }) {
   return (
     <section
-      class={`${darkMode ? "services-dark" : null} cards `}
+      className={`${darkMode ? "services-dark" : null} cards `}
       id="services"
     >
-      <h2 class="title">Services</h2>
-      <div class="content">
+      <h2 className="title">Services</h2>
+      <div className="content">
         <Card
           darkMode={darkMode}
           title="Frontend Development"
@@ -16,7 +16,7 @@ function Services({ darkMode }) {
             "I build websites using HTML, CSS, Javascript, React.js andmaterial ui"
           }
         >
-          <i class="fas fa-code"></i>
+          <i className="fas fa-code"></i>
         </Card>
         <Card
           darkMode={darkMode}
@@ -25,14 +25,14 @@ function Services({ darkMode }) {
             "Building website's backend with Node.js, express, mongodb"
           }
         >
-          <i class="fas fa-server"></i>
+          <i className="fas fa-server"></i>
         </Card>
         <Card
           darkMode={darkMode}
           title="Fullstack Development"
           decription={"Developing both client and server side "}
         >
-          <i class="fas fa-laptop-code"></i>
+          <i className="fas fa-laptop-code"></i>
         </Card>
       </div>
     </section>

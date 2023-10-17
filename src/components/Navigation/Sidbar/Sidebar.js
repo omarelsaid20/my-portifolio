@@ -1,15 +1,25 @@
-import { useState } from "react";
 import "./Sidebar.css";
-function Sidebar({ darkMode, setDarkMode }) {
-  const [openSidebar, setOpenSidebar] = useState(false);
 
+function Sidebar({
+  darkMode,
+  setDarkMode,
+  openSidebar,
+  setOpenSidebar,
+  setOpenBackDrop,
+}) {
   return (
     <>
       <div
         className={` sidebar ${openSidebar ? null : "close-sidebar"}
         ${darkMode ? "dark" : null}`}
       >
-        <button className="closebtn" onClick={() => setOpenSidebar(false)}>
+        <button
+          className="closebtn"
+          onClick={() => {
+            setOpenBackDrop(false);
+            setOpenSidebar(false);
+          }}
+        >
           ×
         </button>
         <a href="#about-me">About-me</a>
@@ -20,12 +30,18 @@ function Sidebar({ darkMode, setDarkMode }) {
           className="dark-mode-btn"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+          {darkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
           {darkMode ? " light mode" : " Dark mode"}
         </button>
       </div>
 
-      <button className="openbtn" onClick={() => setOpenSidebar(true)}>
+      <button
+        className="openbtn"
+        onClick={() => {
+          setOpenBackDrop(true);
+          setOpenSidebar(true);
+        }}
+      >
         ☰
       </button>
     </>

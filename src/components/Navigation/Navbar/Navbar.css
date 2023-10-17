@@ -9,7 +9,7 @@
   font-weight: 500;
   margin-left: 30px;
   padding-bottom: 2px;
-  transition: 0.4s ease;
+  transition: 0.5s ease-out;
 }
 .navigation .nav-link:hover {
   border-bottom: 2.5px solid #02445a;
@@ -46,4 +46,9 @@
 
 .header-dark .dark-mode-btn-nav {
   color: #fff;
+}
+
+.header-dark .nav-link:hover {
+  border-bottom: 2.5px solid #2fa6ce;
+  color: #2fa6ce;
 }

@@ -3,7 +3,9 @@ import "./ContactForm.css";
 
 function ContactForm({ darkMode }) {
   return (
-    <section class={`${darkMode ? "contact-form-dark" : null} contact-form `}>
+    <section
+      className={`${darkMode ? "contact-form-dark" : null} contact-form `}
+    >
       <div className="shape">
         <img src="./images/Contact-us.png" alt="dummy" />
       </div>

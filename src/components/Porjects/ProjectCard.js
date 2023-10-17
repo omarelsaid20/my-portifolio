@@ -1,17 +1,17 @@
 function ProjectCard({ imageUrl, title, decription, darkMode }) {
   return (
-    <div class={`${darkMode ? "project-card-dark" : null} project-card `}>
-      <div class="project-image">
+    <div className={`${darkMode ? "project-card-dark" : null} project-card `}>
+      <div className="project-image">
         <img src={imageUrl} alt="project1" />
       </div>
-      <div class="project-info">
+      <div className="project-info">
         <h3>{title}</h3>
-        <p class="project-category">
+        <p className="project-category">
           <span>Technologies: </span>
           {decription}
         </p>
-        <strong class="project-title">
-          <a href="#" class="more-details">
+        <strong className="project-title">
+          <a href="#" className="more-details">
             more-details
           </a>
         </strong>

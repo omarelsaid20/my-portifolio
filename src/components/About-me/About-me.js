@@ -2,35 +2,35 @@ import "./About-me.css";
 
 function AboutMe({ darkMode }) {
   return (
-    <section class={`${darkMode ? "dark" : null} about-me `} id="about-me">
-      <div class="about-me-img">
+    <section className={`${darkMode ? "dark" : null} about-me `} id="about-me">
+      <div className="about-me-img">
         <img src="./images/omar-logo.jpg" alt="some dummy" />
       </div>
-      <div class="about-me-info">
+      <div className="about-me-info">
         <h1>About Me</h1>
-        <p class="overview">
+        <p className="overview">
           Full-Stack Developer with 1 years of experience designing and
           implementing innovative web applications. Proficient in front-end
           (HTML5, CSS3, JavaScript, React.js) and back-end (Node.js, Express.js,
           databases) development. Skilled in deploying applications using AWS,
           Docker, and Jenkins.
         </p>
-        <div class="personal-info">
-          <div class="titels">
+        <div className="personal-info">
+          <div className="titels">
             <p>
-              <i class="fas fa-caret-right"></i>Name :
+              <i className="fas fa-caret-right"></i>Name :
             </p>
             <p>
-              <i class="fas fa-caret-right"></i>Date of birth :
+              <i className="fas fa-caret-right"></i>Date of birth :
             </p>
             <p>
-              <i class="fas fa-caret-right"></i>Address :
+              <i className="fas fa-caret-right"></i>Address :
             </p>
             <p>
-              <i class="fas fa-caret-right"></i>E-mail:
+              <i className="fas fa-caret-right"></i>E-mail:
             </p>
             <p>
-              <i class="fas fa-caret-right"></i>Phone:
+              <i className="fas fa-caret-right"></i>Phone:
             </p>
           </div>
           <div>
@@ -42,9 +42,9 @@ function AboutMe({ darkMode }) {
           </div>
         </div>
         <hr />
-        <div class="education">
+        <div className="education">
           <h3>
-            Education <i class="fas fa-graduation-cap"></i>:
+            Education <i className="fas fa-graduation-cap"></i>:
           </h3>
           <p>
             Bachelor Degree of Computer Science, Mansoura University

@@ -27,7 +27,7 @@ function Navbar({ darkMode, setDarkMode }) {
           className="dark-mode-btn-nav"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}
+          {darkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
         </button>
       </nav>
     </>
