@@ -12,8 +12,7 @@ function AboutMe({ darkMode }) {
           Full-Stack Developer with 1 years of experience designing and
           implementing innovative web applications. Proficient in front-end
           (HTML5, CSS3, JavaScript, React.js) and back-end (Node.js, Express.js,
-          databases) development. Skilled in deploying applications using AWS,
-          Docker, and Jenkins.
+          databases) development
         </p>
         <div className="personal-info">
           <div className="titels">
