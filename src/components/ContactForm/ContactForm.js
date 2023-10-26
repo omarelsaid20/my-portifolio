@@ -1,7 +1,9 @@
+import { useUI } from "../../context/Uicontext";
 import Input from "../UI/Input";
 import "./ContactForm.css";
 
-function ContactForm({ darkMode }) {
+function ContactForm() {
+  const { darkMode } = useUI();
   return (
     <section
       className={`${darkMode ? "contact-form-dark" : null} contact-form `}

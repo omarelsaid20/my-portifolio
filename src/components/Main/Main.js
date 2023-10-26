@@ -7,9 +7,9 @@ function Main() {
         <h2>
           Hello i'am Omar
           <br />
-          <span>Fullstact developer</span>
+          <span>Fullstack developer</span>
         </h2>
-        <h3>I build Websites</h3>
+        <h3>Building Websites</h3>
         <a href="./omar-elsaid-resume.pdf" download className="main-btn">
           Download CV <i className="fas fa-download"></i>
         </a>

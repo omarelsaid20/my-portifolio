@@ -1,12 +1,14 @@
+import { useUI } from "../../../context/Uicontext";
 import "./Sidebar.css";
 
-function Sidebar({
-  darkMode,
-  setDarkMode,
-  openSidebar,
-  setOpenSidebar,
-  setOpenBackDrop,
-}) {
+function Sidebar() {
+  const {
+    darkMode,
+    setDarkMode,
+    openSidebar,
+    setOpenSidebar,
+    setOpenBackDrop,
+  } = useUI();
   return (
     <>
       <div
@@ -30,7 +32,11 @@ function Sidebar({
           className="dark-mode-btn"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
+          {darkMode ? (
+            <i className="fas fa-sun"></i>
+          ) : (
+            <i className="fas fa-moon"></i>
+          )}
           {darkMode ? " light mode" : " Dark mode"}
         </button>
       </div>

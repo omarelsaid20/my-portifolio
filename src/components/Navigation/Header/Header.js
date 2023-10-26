@@ -1,6 +1,8 @@
+import { useUI } from "../../../context/Uicontext";
 import "./Header.css";
 
-function Header({ children, darkMode }) {
+function Header({ children }) {
+  const { darkMode } = useUI();
   return (
     <header className={`${darkMode ? "header-dark" : null}`}>
       <a href="/" className="logo">

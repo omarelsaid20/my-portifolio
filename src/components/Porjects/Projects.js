@@ -1,7 +1,9 @@
+import { useUI } from "../../context/Uicontext";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
-function Projects({ darkMode }) {
+function Projects() {
+  const { darkMode } = useUI();
   return (
     <section className=" projects" id="projects">
       <h2 className="title">Projects</h2>

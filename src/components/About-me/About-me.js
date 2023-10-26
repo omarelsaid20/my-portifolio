@@ -1,6 +1,8 @@
+import { useUI } from "../../context/Uicontext";
 import "./About-me.css";
 
-function AboutMe({ darkMode }) {
+function AboutMe() {
+  const { darkMode } = useUI();
   return (
     <section className={`${darkMode ? "dark" : null} about-me `} id="about-me">
       <div className="about-me-img">

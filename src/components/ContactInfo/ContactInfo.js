@@ -1,8 +1,10 @@
+import { useUI } from "../../context/Uicontext";
 import Card from "../UI/Card";
 
 import "./ContactInfo.css";
 
-function ContactInfo({ darkMode }) {
+function ContactInfo() {
+  const { darkMode } = useUI();
   return (
     <section className={`${darkMode ? "dark" : null} contact `} id="contact">
       <h2 className="title">Contact Information</h2>

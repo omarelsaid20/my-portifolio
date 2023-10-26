@@ -1,6 +1,8 @@
+import { useUI } from "../../../context/Uicontext";
 import "./Navbar.css";
 
-function Navbar({ darkMode, setDarkMode }) {
+function Navbar() {
+  const { darkMode, setDarkMode } = useUI();
   return (
     <>
       <nav className="navigation">
@@ -27,7 +29,11 @@ function Navbar({ darkMode, setDarkMode }) {
           className="dark-mode-btn-nav"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>}
+          {darkMode ? (
+            <i className="fas fa-sun"></i>
+          ) : (
+            <i className="fas fa-moon"></i>
+          )}
         </button>
       </nav>
     </>

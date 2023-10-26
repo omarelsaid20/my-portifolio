@@ -1,14 +1,16 @@
 import React from "react";
 
 import "./BackDrop.css";
+import { useUI } from "../../context/Uicontext";
 
-const Backdrop = (props) => {
-  return props.openBackDrop ? (
+const Backdrop = () => {
+  const { openBackDrop, setOpenBackDrop, setOpenSidebar } = useUI();
+  return openBackDrop ? (
     <div
       className="backdrop"
       onClick={() => {
-        props.setOpenSidebar(false);
-        props.setOpenBackDrop(false);
+        setOpenSidebar(false);
+        setOpenBackDrop(false);
       }}
     ></div>
   ) : null;

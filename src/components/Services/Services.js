@@ -1,7 +1,9 @@
+import { useUI } from "../../context/Uicontext";
 import Card from "../UI/Card";
 
 import "./Services.css";
-function Services({ darkMode }) {
+function Services() {
+  const { darkMode } = useUI();
   return (
     <section
       className={`${darkMode ? "services-dark" : null} cards `}
