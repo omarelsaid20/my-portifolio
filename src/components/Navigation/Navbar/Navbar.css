@@ -8,13 +8,32 @@
   font-size: 1.1em;
   font-weight: 500;
   margin-left: 30px;
-  padding-bottom: 2px;
-  transition: 0.5s ease-out;
+  padding-bottom: 1px;
+  /* transition: 0.5s ease-out; */
+
+  transition: all 0.5s;
+  position: relative;
 }
-.navigation .nav-link:hover {
+
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 2.5px;
+  background-color: #02445a;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.navigation .nav-link:hover::after {
+  width: 100%;
+}
+
+/* .navigation .nav-link:hover {
   border-bottom: 2.5px solid #02445a;
   color: #02445a;
-}
+} */
 
 .nav-btn {
   display: inline-block;
@@ -48,7 +67,7 @@
   color: #fff;
 }
 
-.header-dark .nav-link:hover {
+/* .header-dark .nav-link:hover {
   border-bottom: 2.5px solid #2fa6ce;
   color: #2fa6ce;
-}
+} */

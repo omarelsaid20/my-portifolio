@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import AboutMe from "./components/About-me/About-me";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -19,7 +18,6 @@ function App() {
     <div className="App">
       <UiProvider>
         <Backdrop />
-
         <Header>
           <Navbar />
           <Sidebar />

@@ -9,8 +9,8 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
-  /* color: #fff; */
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .card .icon {

@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <section className={`${darkMode ? "dark" : null} about-me `} id="about-me">
       <div className="about-me-img">
-        <img src="./images/omar-logo.jpg" alt="some dummy" />
+        <img src="./images/omar-logo.jpg" alt="Omar Elsaid" />
       </div>
       <div className="about-me-info">
         <h1>About Me</h1>

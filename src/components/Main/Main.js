@@ -5,7 +5,7 @@ function Main() {
     <section className="main">
       <div>
         <h2>
-          Hello i'am Omar
+          Hi i'am Omar
           <br />
           <span>Fullstack developer</span>
         </h2>
