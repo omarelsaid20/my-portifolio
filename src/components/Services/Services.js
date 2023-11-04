@@ -6,7 +6,7 @@ function Services() {
   const { darkMode } = useUI();
   return (
     <section
-      className={`${darkMode ? "services-dark" : null} cards `}
+      className={`${darkMode ? "services-dark" : null} cards`}
       id="services"
     >
       <h2 className="title">Services</h2>
