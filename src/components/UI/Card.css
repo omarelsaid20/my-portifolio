@@ -44,4 +44,5 @@
 .card-dark {
   background-color: black;
   color: rgb(234, 234, 234);
+  box-shadow: 15px 15px 30px #272727, -15px -15px 30px #1c1c1c;
 }
