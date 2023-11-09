@@ -16,7 +16,7 @@ const projects = [
     imageUrl: "./images/p2.jpg",
     title: "MY PLACES APP",
     decription: "Html, css, React.js, Node.js , mongoose and restful api",
-    codeLink: "",
+    codeLink: "https://github.com/omarelsaid20/My_Places",
     LiveLink: "",
   },
   {
@@ -24,8 +24,8 @@ const projects = [
     imageUrl: "./images/p4.jpg",
     title: "PIZZA RESTURANT",
     decription: "React.js, Redux/toolkit, React-router, Tailwind",
-    codeLink: "asda",
-    LiveLink: "",
+    codeLink: "https://github.com/omarelsaid20/Fast-Pizza-Resturant",
+    LiveLink: "https://pizza-resturant-beta.vercel.app/",
   },
   {
     id: 4,
@@ -34,6 +34,14 @@ const projects = [
     decription: "Html, css, React.js and React hooks",
     codeLink: "",
     LiveLink: "",
+  },
+  {
+    id: 5,
+    imageUrl: "./images/p5.jpg",
+    title: "WorldWise",
+    decription: "React.js - Json-server - React-leaflet",
+    codeLink: "https://github.com/omarelsaid20/worldwise-app",
+    LiveLink: "https://world-wise-two.vercel.app/",
   },
 ];
 function Projects() {

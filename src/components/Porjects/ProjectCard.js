@@ -18,10 +18,10 @@ function ProjectCard({ project }) {
           {decription}
         </p>
         <strong className="project-title">
-          <a className="more-details" href={codeLink}>
+          <a target="_blank" className="more-details" href={codeLink}>
             View Code <i className="fas fa-code"></i>
           </a>
-          <a className="more-details live" href={liveLink}>
+          <a target="_blank" className="more-details live" href={liveLink}>
             Live
           </a>
         </strong>
