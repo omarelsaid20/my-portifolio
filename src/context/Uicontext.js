@@ -3,9 +3,10 @@ import { createContext, useContext, useState } from "react";
 const UiContext = createContext();
 
 const UiProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [openBackDrop, setOpenBackDrop] = useState(false);
   const [openSidebar, setOpenSidebar] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <UiContext.Provider
@@ -16,6 +17,8 @@ const UiProvider = ({ children }) => {
         setOpenBackDrop,
         openSidebar,
         setOpenSidebar,
+        openModal,
+        setOpenModal,
       }}
     >
       {children}

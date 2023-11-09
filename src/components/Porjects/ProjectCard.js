@@ -1,4 +1,11 @@
-function ProjectCard({ imageUrl, title, decription, darkMode }) {
+/* eslint-disable no-unused-expressions */
+import { useUI } from "../../context/Uicontext";
+
+function ProjectCard({ project }) {
+  const { imageUrl, title, decription, codeLink, liveLink } = project;
+  console.log(project);
+  const { darkMode } = useUI();
+
   return (
     <div className={`${darkMode ? "project-card-dark" : null} project-card `}>
       <div className="project-image">
@@ -11,8 +18,11 @@ function ProjectCard({ imageUrl, title, decription, darkMode }) {
           {decription}
         </p>
         <strong className="project-title">
-          <a href="#" className="more-details">
-            more-details
+          <a className="more-details" href={codeLink}>
+            View Code <i className="fas fa-code"></i>
+          </a>
+          <a className="more-details live" href={liveLink}>
+            Live
           </a>
         </strong>
       </div>

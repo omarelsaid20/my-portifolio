@@ -51,6 +51,9 @@
 .nav-btn:hover {
   background-color: #02445a;
 }
+.nav-btn:active {
+  background-color: red;
+}
 
 .dark-mode-btn-nav {
   padding-left: 10px;
