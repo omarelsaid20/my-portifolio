@@ -84,6 +84,11 @@
   background-color: #02445a;
   color: #fff;
 }
+
+.live i {
+  padding-left: 3px;
+}
+
 .live:hover {
   background-color: #035d7b;
   color: #fff;

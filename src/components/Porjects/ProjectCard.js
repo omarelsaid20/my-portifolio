@@ -2,7 +2,7 @@
 import { useUI } from "../../context/Uicontext";
 
 function ProjectCard({ project }) {
-  const { imageUrl, title, decription, codeLink, liveLink } = project;
+  const { imageUrl, title, decription, codeLink, LiveLink } = project;
   console.log(project);
   const { darkMode } = useUI();
 
@@ -18,11 +18,11 @@ function ProjectCard({ project }) {
           {decription}
         </p>
         <strong className="project-title">
-          <a target="_blank" className="more-details" href={codeLink}>
+          <a target="blank" className="more-details" href={codeLink}>
             View Code <i className="fas fa-code"></i>
           </a>
-          <a target="_blank" className="more-details live" href={liveLink}>
-            Live
+          <a target="blank" className="more-details live" href={LiveLink}>
+            Preview <i class="fas fa-chalkboard"></i>
           </a>
         </strong>
       </div>
