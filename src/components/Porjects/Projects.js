@@ -32,8 +32,8 @@ const projects = [
     imageUrl: "./images/p1.jpg",
     title: "REACT QUIZ APP",
     decription: "Html, css, React.js and React hooks",
-    codeLink: "",
-    LiveLink: "",
+    codeLink: "https://github.com/omarelsaid20/Quiz-app",
+    LiveLink: "https://quiz-test-nu.vercel.app/",
   },
   {
     id: 5,
