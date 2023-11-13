@@ -30,13 +30,16 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:8080/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://projects-api-7aa5.onrender.com/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       const responseData = await response.json();
 
       if (!response.ok) {
