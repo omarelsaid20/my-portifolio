@@ -1,3 +1,4 @@
+import { toast } from "sonner";
 import "./Main.css";
 
 function Main() {
@@ -10,7 +11,12 @@ function Main() {
           <span>Fullstack developer</span>
         </h2>
         <h3>Building Websites</h3>
-        <a href="./omar-elsaid-resume.pdf" download className="main-btn">
+        <a
+          href="./omar-elsaid-resume.pdf"
+          download
+          className="main-btn"
+          onClick={() => toast("CV downloaded successfully")}
+        >
           Download CV <i className="fas fa-download"></i>
         </a>
         <div className="social-icons">

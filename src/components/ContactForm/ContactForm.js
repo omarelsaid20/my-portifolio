@@ -30,6 +30,7 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
+      toast.loading("Sending Message ...");
       const response = await fetch(
         "https://projects-api-7aa5.onrender.com/contact",
         {
