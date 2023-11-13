@@ -3,11 +3,10 @@ import { useUI } from "../../context/Uicontext";
 
 function ProjectCard({ project }) {
   const { imageUrl, title, decription, codeLink, LiveLink } = project;
-  console.log(project);
   const { darkMode } = useUI();
 
   return (
-    <div className={`${darkMode ? "project-card-dark" : null} project-card `}>
+    <div className={`${darkMode ? "project-card-dark" : ""} project-card `}>
       <div className="project-image">
         <img src={imageUrl} alt="project1" />
       </div>

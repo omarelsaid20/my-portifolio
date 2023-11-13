@@ -2,7 +2,7 @@ import "./Card.css";
 
 function Card({ title, decription, children, darkMode }) {
   return (
-    <div className={`${darkMode ? "card-dark" : null} card `}>
+    <div className={`${darkMode ? "card-dark" : ''} card `}>
       <div className="icon">{children}</div>
       <div className="info">
         <h3>{title}</h3>

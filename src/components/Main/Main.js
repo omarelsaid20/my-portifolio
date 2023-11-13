@@ -2,7 +2,7 @@ import "./Main.css";
 
 function Main() {
   return (
-    <section className="main">
+    <section className="main section-padding">
       <div>
         <h2>
           Hi i'am Omar

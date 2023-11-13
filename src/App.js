@@ -1,3 +1,5 @@
+import { Toaster, toast } from "sonner";
+
 import "./App.css";
 import AboutMe from "./components/About-me/About-me";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -29,6 +31,7 @@ function App() {
         <ContactInfo />
         <ContactForm />
         <Footer />
+        <Toaster richColors />
       </UiProvider>
     </div>
   );

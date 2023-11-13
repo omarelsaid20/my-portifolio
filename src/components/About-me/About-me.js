@@ -4,7 +4,10 @@ import "./About-me.css";
 function AboutMe() {
   const { darkMode } = useUI();
   return (
-    <section className={`${darkMode ? "dark" : null} about-me `} id="about-me">
+    <section
+      className={`${darkMode ? "dark" : ""} about-me section-padding`}
+      id="about-me"
+    >
       <div className="about-me-img">
         <img src="./images/omar-logo.jpg" alt="Omar Elsaid" />
       </div>

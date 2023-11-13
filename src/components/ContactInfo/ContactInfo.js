@@ -6,7 +6,10 @@ import "./ContactInfo.css";
 function ContactInfo() {
   const { darkMode } = useUI();
   return (
-    <section className={`${darkMode ? "dark" : null} contact `} id="contact">
+    <section
+      className={`${darkMode ? "dark" : ""} contact section-padding`}
+      id="contact"
+    >
       <h2 className="title">Contact Information</h2>
       <div className="content">
         <Card

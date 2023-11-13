@@ -1,15 +1,14 @@
-import { useUI } from "../../context/Uicontext";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 
 const projects = [
   {
-    id: 1,
-    imageUrl: "./images/p3.jpg",
-    title: "My shop | E-commerce",
-    decription: "Html, css, Node.js, ejs , mongoose ",
-    codeLink: "",
-    LiveLink: "",
+    id: 5,
+    imageUrl: "./images/p5.jpg",
+    title: "WorldWise",
+    decription: "React.js - Json-server - React-leaflet",
+    codeLink: "https://github.com/omarelsaid20/worldwise-app",
+    LiveLink: "https://world-wise-two.vercel.app/",
   },
   {
     id: 2,
@@ -35,18 +34,19 @@ const projects = [
     codeLink: "https://github.com/omarelsaid20/Quiz-app",
     LiveLink: "https://quiz-test-nu.vercel.app/",
   },
+
   {
-    id: 5,
-    imageUrl: "./images/p5.jpg",
-    title: "WorldWise",
-    decription: "React.js - Json-server - React-leaflet",
-    codeLink: "https://github.com/omarelsaid20/worldwise-app",
-    LiveLink: "https://world-wise-two.vercel.app/",
+    id: 1,
+    imageUrl: "./images/p3.jpg",
+    title: "My shop | E-commerce",
+    decription: "Html, css, Node.js, ejs , mongoose ",
+    codeLink: "",
+    LiveLink: "",
   },
 ];
 function Projects() {
   return (
-    <section className=" projects" id="projects">
+    <section className=" projects section-padding" id="projects">
       <h2 className="title">Projects</h2>
       <div className="content">
         {projects.map((project) => (

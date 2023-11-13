@@ -1,5 +1,7 @@
 import { useUI } from "../../../context/Uicontext";
+import { toast } from "sonner";
 import "./Navbar.css";
+import MyIcon from "../../UI/MyIcon";
 
 function Navbar() {
   const { darkMode, setDarkMode } = useUI();
@@ -27,7 +29,13 @@ function Navbar() {
         </a>
         <button
           className="dark-mode-btn-nav"
-          onClick={() => setDarkMode(!darkMode)}
+          onClick={() => {
+            setDarkMode(!darkMode);
+            toast("Dark mode toggled", {
+              duration: 5000,
+              icon: <MyIcon darkMode={darkMode} />,
+            });
+          }}
         >
           {darkMode ? (
             <i className="fas fa-sun"></i>
